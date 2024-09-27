@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=w, initial-scale=1.0">
+    <title>Week 4</title>
+</head>
+<body>
+    <header>
+        <h1>Week 1</h1>
+    </header>
+
+    <main>
+        <h2>image tag example</h2>
+        <!-- if decorative, alt=empty, if not, enter content -->
+        <img src="./images/coffee-shop.jpg" alt="coffee" width="200">
+        <img src="./images/coffee-shop.jpg" title="coffee" width="300">
+        
+        <h2>Link tag example</h2>
+        <!-- first -->
+        <a href="https://www.google.ca/">Google Website</a>
+        <p>here is the link to google <a href="https://www.google.ca/" target="_blank">Google Website</a></p>
+        <!-- second -->
+        <p><a href="./thanks.html">Thank you</a></p>
+        <!-- third -->
+        <p><a href="#cakes">Jump to cakes</a></p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure, sed dolorum recusandae corrupti dolore distinctio? Quae autem modi quo laborum, atque eaque est dolore, aspernatur ratione nemo harum maxime?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure, sed dolorum recusandae corrupti dolore distinctio? Quae autem modi quo laborum, atque eaque est dolore, aspernatur ratione nemo harum maxime?</p>
+        <br><br><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium delectus necessitatibus excepturi odio laborum illo ullam nulla assumenda, tenetur tempore voluptatibus distinctio ea, sunt quia ipsum molestiae numquam esse aspernatur.</p>
+        <ul id="cakes">
+            <li>ad</li>
+        </ul>
+        
+        <!-- table in html -->
+         <h2>simple html table</h2>
+         <table border="3" style="color: rgb(14, 10, 241);">
+            <caption>Student Grade</caption>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Course Name</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody style="align-content: center; ">
+                <tr>
+                    <td>John Smith</td>
+                    <td>Web dev</td>
+                    <td>A</td>
+                </tr>
+    
+                <tr>
+                    <td>John Smith</td>
+                    <td>Web dev</td>
+                    <td>A</td>
+                </tr>
+                
+                <tr>
+                    <td>John Smith</td>
+                    <td>Web dev</td>
+                    <td>A</td>
+                </tr>
+    
+    
+             </tbody>
+         </table>
+         
+         <table border="1" style="align-content: center; ">
+            <caption>students grades</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Names</th>
+                    <th colspan="2">Scores</th>
+                </tr>
+                <tr>
+                    <th>Maths</th>
+                    <th>English</th>
+                </tr>
+            </thead>
+
+         </table>
+        <!-- test -->
+         <table border="1" style="background-color: bisque; ">
+            <caption>caption can be anything</caption>
+            <thead> 
+                <tr>
+                    <th colspan="2">Week day</th>
+                    <th colspan="2">Month</th>
+                </tr>
+                <tr>
+                    <th>man</th>
+                    <th>kid</th>
+                    <th>jan</th>
+                    <th>may</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+            <tfoot><tr><td>213</td></tr></tfoot>
+         </table><br>
+         <!-- form -->
+          <form action="./thanks.html" method="get">
+            <label for="fullname">full name</label>
+            <input id="fullname" type="number" name="fullname" min="0" max="200" step="10">
+            <br>
+            <label for="useremail">user email</label>
+            <input id="useremail" type="email" name="email">
+            <br>
+            <button type="submit">Send</button>
+            <input type="text" placeholder="asd" value="Mr" required>
+
+            <input type="submit" value="submit">
+            <br>
+            <!-- dropdown -->
+            <label for="rock">to select rock</label>
+            <select name="rsdocks" id="rock">
+                <option value="mars">mars</option>
+                <option value="human">earth</option>
+                <option value="venus">venus</option>
+            </select>
+            <!-- radio -->
+             <label for="little">little</label>
+             <input type="radio" name="choose" id="little" value="1-2">
+             <label for="medium">medium</label>
+             <input type="radio" name="choose" id="medium" value="2-3" checked>
+             <label for="big">big</label>
+             <input type="radio" name="choose" id="big" value="3-4">
+             <label for="huge">huge</label>
+             <input type="radio" name="choose" id="huge" value="4-5">
+             <!-- checkbox -->
+             <label for="little">little</label>
+             <input type="checkbox" name="a" id="little" value="wo" checked>
+             <label for="must">must</label>
+             <input type="checkbox" name="a" id="must" value="ta" checked>
+            <div id=""></div>
+          </form>
+    </main>
+
+    <aside>
+
+    </aside>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
