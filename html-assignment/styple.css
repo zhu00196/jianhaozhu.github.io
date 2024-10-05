@@ -34,13 +34,13 @@ nav ul a:hover{
 }
 form{
     padding: 10px;
-    width: 80px;
+    width: 180px;
     background-color: chocolate;
     border: 1rem solid red;
 }
 form:hover{
     padding: 10px;
-    width: 80px;
+    width: 180px;
     background-color: rgb(30, 183, 210);
     border: 1rem solid rgb(195, 0, 255);
 }
