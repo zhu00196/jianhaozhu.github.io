@@ -1,0 +1,85 @@
+.header,
+.main-content,
+.sidebar,
+.footer{
+  background: #72C2FF;
+  margin: 2px 0;
+}
+
+
+/*
+Set visual heights to visualize
+*/
+.header{
+  height: 60px;
+}
+
+.main-content{
+  height: 160px;
+}
+
+.sidebar{
+  height: 100px;
+}
+
+.footer{
+  height: 40px;
+}
+
+@media screen and (min-width:700px) {
+    .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+Assign a background color to
+.header
+.main-content
+.sidebar
+.footer
+*/
+.header,
+.main-content,
+.sidebar,
+.footer{
+  background: #72C2FF;
+  margin: 2px 0;
+}
+
+
+/*
+Set visual heights to visualize
+*/
+.header{
+  height: 60px;
+}
+
+.main-content{
+  height: 160px;
+}
+
+.sidebar{
+  height: 100px;
+}
+
+.footer{
+  height: 40px;
+}
+
+
+/*
+At 400px wide float the main content and sidebar beside eachother
+*/
+@media screen and (min-width: 700px){
+  .main-content{
+    width: 70%;
+    float: left;
+  }
+  .sidebar{
+    width: 29%;
+    float: right;
+  }
+}
+}

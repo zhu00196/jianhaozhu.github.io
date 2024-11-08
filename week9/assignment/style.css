@@ -1,0 +1,31 @@
+.largekitten{display:none;}
+li{ 
+    list-style: none;
+    border-bottom: 1px solid green;
+    width: 150px;
+    padding: 10px;
+}
+@media screen and (min-width:480px) {
+    .largekitten{display: block;}
+    .smallkitten{display: none ;}
+}
+
+@media screen and (min-width:800px) {
+    li{
+        float:right;
+        border-bottom: none;
+        border-right: 1px solid blue;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1200px) {
+    h1{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    h1{
+        font-size: 6rem;
+    }
+}
