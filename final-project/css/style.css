@@ -67,7 +67,7 @@ nav, div{
     justify-self: center;
     width: 95%;
     height: 200px;
-    background-color: rgb(255, 187, 0);
+    background-color: hsl(30, 59%, 53%);
 }
 img, .logo{
     width: 30%;
