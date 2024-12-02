@@ -39,9 +39,11 @@ body{
 
 img{width: 100%;}
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,P.a{
     font-weight: bold;
     margin: 0.5em 0 0.2em;
+    width: 95%;
+    padding: 2.5%;
 }
 h1{
     font-size: 5.063em;
@@ -55,20 +57,685 @@ h3{
 h4{
     font-size: 1.5em;
 }
-p{
+p{  
+    font-size: 1em;
     margin: 1em 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* whole page grid distribute */
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 11111111111For mobile version web1111111111111111111111 */
+/* header */
+/* nav basic css */
+nav{
+    width: 100%;
+    height: 570px;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap:nowrap;
+}
+/* logo */
+div.logo{
+    width: 95%;
+    height: 200px;
+    background-color: #c68d00;
+}
+img.logo{
+    width: 12%;
+}
+/* non order list */
+nav>div{
+    width: 100%;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+li{
+    line-height: 4rem;
+    align-self: center;
+}
+li>a{
+    font-size: 2.25rem;
+    color: #c68d00;
+}
+li:nth-child(1){
+    width: 95%;
+    background-color: #c68d00;
+    display: flex;
+    justify-content: center;
+}
+li:nth-child(1)>a{
+    color: black;
+}
+/* sarch bar */
+form.search{
+    width: 95%;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search>input{
+    color: grey;
+    font-size: 2.25rem;
+    width: 95%;
+    height: 45px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+button>i{
+    font-size: 3rem;
+    color: #c68d00;
+    display: inline-block;
+    background-color: black;
+    padding: 2.7px;
+    margin: -8px;
+    border: 2px solid #c68d00;
+    border-radius: 3px;
+}
+/* welcome section */
+.header{
+    color: white;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.header>img{
+    width: 150%;
+    grid-row:1/3;
+    grid-column: 1/2;
+}
+.header>.grey-back, .header>.welcome{
+    width: 130%;
+    height: 75%;
+    margin: 10% 0;
+    grid-row:1/3;
+    grid-column: 1/2;
+    background-color: black;
+    opacity: 30%;
+}
+.header>.welcome{
+    opacity: 100%;
+    background-color: transparent;
+    z-index: 1;
+}
+.header h1{
+    width: 70%;
+    overflow-wrap: break-word;
+}
+.header p{
+    width: 70%;
+    overflow-wrap: break-word;
+}
+.header>div>a{
+    font-size: 2.25rem;
+    display: inline-block;
+    padding: 2.5%;
+    margin: 2.5%;
+    color: rgb(0, 0, 0);
+    background-color: #c68d00;
+}
+
+/* main section */
+main{
+    width: 100%;
+    margin-top: -5%;
+}
+/* about us */
+.about{
+    width: 100%;
+    background-color: rgb(240, 224, 184);
+}
+.about>img{
+    width: 95%;
+    padding: 2.5%;
+}
+.about>h2,p{
+    width: 95%;
+    padding: 2.5%;
+}
+.about>p{
+    margin-top: -5%;
+
+}
+/* Our Services */
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.service h2{
+    width: 95%;
+    padding: 0%;
+    margin: 2.5%;
+    margin-bottom: -2%;
+}
+ 
+
+
+.service div{
+    width: 95%;
+    margin: 2.5%;
+    background-color: #c5b07c;
+}
+.service img{
+    width: 100%;
+}
+.search>P{
+    margin-top: -3%;
+}
+.service a{
+    font-size: 1.5rem;
+    display: inline-block;
+    color: white;
+    background-color: rgb(34, 34, 34);
+    padding: 3%;
+    margin: 2.5%;
+    margin-top: -3%;
+}
+.service i{
+    font-size: 2rem;
+}
+
+/* Our vision */
+.vision{
+    width: 100%;
+    height: 100%;
+    background-color: #c68d00;
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:local
+}
+.vision h2, .vision p{
+    color: white;
+}
+.vision p{ 
+    margin-top: -5%;
+}
+.vision a{
+    display: inline-block;
+    font-size: 2.25rem;
+    color: white;
+    background-color: rgb(34, 34, 34);
+    padding: 2.5%;
+    margin: 2.5%;
+    border: 2px solid #c68d00;
+    margin-top: -2%;
+}
+
+/* Our Team */
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 10px;
+}
+
+/* John & Doe */
+.john, .bob{
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: #c5b07c;
+}
+.team img{
+    width: 100%;
+}
+.team hr{
+    width: 95%;
+    margin: -2% 2.5%;
+    border: 1px solid #c68d00;
+}
+.team h2{
+    padding: 0;
+    margin: 2.5%;
+    margin-top: 5%;
+    margin-bottom: -1%;
+}
+
+.team h3{
+    padding: 0;
+    margin: 2.5%;
+    margin-bottom: -3%;
+}
+.team h4{
+    padding: 0;
+    margin: 2.5%;
+}
+
+/* Contact us */
+.contact h2,.contact h3{
+    margin: -2% 0%;
+}
+
+.send form{
+    width: 100%;
+    margin: 0% 2.5%;
+}
+input{
+    width: 95%;
+    height: 20px;
+}
+input#message{
+    height: 80px;
+}
+.sub{
+    font-size: 1.2rem;
+    display: inline-block;
+    width: fit-content;
+    margin: 2% 0%;
+    border: none;
+    color: #c68d00;
+    background-color: rgb(34, 34, 34);
+}
+
+/* Hours of operation */
+.hours table{
+    width: 95%;
+    padding: 2%;
+    margin: 2.5%;
+    border-collapse: collapse;
+    margin-top: -3%;
+}
+th,td{
+    padding: 2%;
+    border: 3px solid #000000;
+}
+th{
+    background-color: #c5b07c;
+}
+
+/* Map setting */
+.map{
+    width: 95%;
+}
+map{
+    margin: 0% 2.5%;
+}
+iframe{
+    width: 100%;
+    height: 450px;
+}
+/* footer setting*/
+footer{
+    padding: 2.5%;
+    color:#c68d00;
+    width: 95%;
+    background-color: #000000;
+    margin: 2.5%;
+}
+footer a{
+    color: #c68d00;
+}
+
+
+
+/* 1111   For desktop version web   111111111111111111111111 */
+/* 1111   For desktop version web   111111111111111111111111 */
+@media screen and (min-width: 1200px){
+
+/* reset for page  */
+html{
+    font-size: 16px;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.75rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+p{  
+    font-size: 1rem;
+    margin: 1rem 0;
 }
 
 /* header */
+/* nav basic css */
 nav{
+    width: 80%;
+    height: 150px;
     display: flex;
+    padding: 0% 10%;
+    background-color: black;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
-nav, div{
+/* logo */
+div.logo{
+    background-color: transparent;
+    margin-right: -30%;
     justify-self: center;
-    width: 95%;
-    height: 200px;
-    background-color: hsl(30, 59%, 53%);
 }
-img, .logo{
+img.logo{
+    width: 15%;
+    padding: 12% 2%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    margin-left: -10%;
+}
+li{
+    justify-content: center;
+    padding:0% 5%;
+}
+li>a{
+    display: inline-block;
+    font-size: 1rem;
+    color: #c68d00;
+}
+li:nth-child(1){
+    width: auto;
+    background-color: #c68d00;
+}
+li:nth-child(1)>a{
+    color: black;
+}
+/* sarch bar */
+form.search{
     width: 30%;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search>input{
+    color: grey;
+    font-size: 1rem;
+    width: 200px;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+button>i{
+    font-size: 1.75rem;
+    color: #c68d00;
+    display: inline-block;
+    background-color: black;
+    padding: 2.7px;
+    margin: -8px;
+    border: 2px solid #c68d00;
+    border-radius: 3px;
+}
+/* welcome section */
+.header{
+    color: white;
+    width: 95%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.header>img{
+    width: 150%;
+    height: 50%;
+    object-fit: cover;
+    grid-row:1/2;
+    grid-column: 1/2;
+}
+.header>.grey-back, .header>.welcome{
+    width: 90%;
+    height: 40%;
+    margin: 5% 10%;
+    grid-row:1/2;
+    grid-column: 1/2;
+    background-color: black;
+    opacity: 50%;
+}
+.header>.welcome{
+    opacity: 100%;
+    background-color: transparent;
+    z-index: 1;
+}
+.header h1{
+    width: 70%;
+    font-size: 5rem;
+    overflow-wrap: break-word;
+}
+.header p{
+    width: 90%;
+    overflow-wrap: break-word;
+    margin-top: -5%;
+}
+.header>div>a{
+    font-size: 2.25rem;
+    display: inline-block;
+    padding: 2.5%;
+    margin: -3.5% 2.5%;
+    color: rgb(0, 0, 0);
+    background-color: #c68d00;
+}
+
+
+
+/* main section */
+main{
+    width: 100%;
+    margin-top: -5%;
+}
+/* about us */
+.about{
+    width: 100%;
+    background-color: rgb(240, 224, 184);
+    padding: 0% 10%;
+    display: flex;
+    flex-direction: row;
+}
+.about>img{
+    width: 42%;
+    /* height: 300px; */
+    object-fit:contain;
+    padding: 1%;
+}
+.about h2, .about p{
+    width: 70%;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 2%;
+}
+
+
+/* Our Services */
+.service{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 1% 10%;
+    /* gap: 10px; */
+}
+.service h2{
+    width: 90%;
+    padding: 0%;
+    margin: 2.5%;
+    margin-bottom: -2%;
+}
+ 
+
+.service div{
+    width: 45%;
+    margin: 1%;
+    background-color: #c5b07c;
+}
+.service .video, .service .web, .service .print{
+    width: 29%
+}
+
+
+/* Our vision */
+.vision{
+    width: 100%;
+    height: 100%;
+    background-color: #c68d00;
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:local
+}
+.vision h2, .vision p{
+    color: white;
+    width: 80%;
+    margin-left: 7.5%;
+}
+.vision p{ 
+    margin-top: -5%;
+}
+.vision a{
+    display: inline-block;
+    font-size: 2.25rem;
+    color: white;
+    background-color: rgb(34, 34, 34);
+    padding: 2.5%;
+    margin-left: 10%;
+    border: 2px solid #c68d00;
+    margin-top: -2%;
+}
+
+/* Our Team */
+
+.team{
+    width: 90%;
+    margin-left: 9%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* John & Doe */
+.john, .bob{
+    width: 45%;
+    margin-left: 1.5%;
+    background-color: #c5b07c;
+}
+.team img{
+    width: 100%;
+}
+.bob{
+    display: flex;
+    flex-direction: column;
+}
+.bob img{
+    order: 1;
+}
+
+/* Contact us */
+.contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contact h2,.contact h3{
+    margin: -2% 0%;
+}
+
+.send form{
+    width: 100%;
+    margin: 0% 2.5%;
+}
+input{
+    width: 95%;
+    height: 20px;
+}
+input#message{
+    height: 80px;
+}
+.sub{
+    font-size: 1.2rem;
+    display: inline-block;
+    width: fit-content;
+    margin: 2% 0%;
+    border: none;
+    color: #c68d00;
+    background-color: rgb(34, 34, 34);
+}
+
+/* Hours of operation */
+.contact{
+    width: 95%;
+    margin-left: 7.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contact h3{
+    width:40%
+}
+.send{
+    order: 1;
+    width: 42%;
+    margin: 2.5%;
+}
+.hours{
+    width: 88%;
+    order: 3;
+}
+th,td{
+    padding: 2%;
+    border: 3px solid #000000;
+}
+th{
+    background-color: #c5b07c;
+}
+.hours table{
+    width: 100%;
+    padding: 2%;
+    margin: 2.5%;
+    border-collapse: collapse;
+    margin-top: -3%;
+}
+/* Map setting */
+.map{
+    width: 42%;
+    order: 2;
+}
+map{
+    margin: 0% 2.5%;
+}
+iframe{
+    height: 450px;
+}
+/* footer setting*/
+
+footer{
+    color:#c68d00;
+    width: 95%;
+    background-color: #000000;
+    padding: 2.5%;
+    padding-left: 15%;
+}
+footer a{
+    color: #c68d00;
+}
+
+
 }
