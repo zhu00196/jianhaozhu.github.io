@@ -382,6 +382,7 @@ footer{
     width: 95%;
     background-color: #000000;
     margin: 2.5%;
+    margin-left: 4%;
 }
 footer a{
     color: #c68d00;
@@ -401,10 +402,10 @@ h1{
     font-size: 2.5rem;
 }
 h2{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 h3{
-    font-size: 1.75rem;
+    font-size: 2.25rem;
 }
 h4{
     font-size: 1.5rem;
@@ -429,11 +430,10 @@ nav{
 div.logo{
     background-color: transparent;
     margin-right: -30%;
-    justify-self: center;
 }
 img.logo{
     width: 15%;
-    padding: 12% 2%;
+    padding: 9% 2%;
 }
 
 ul{
@@ -444,11 +444,12 @@ ul{
 }
 li{
     justify-content: center;
-    padding:0% 5%;
+    padding:0% 6%;
 }
 li>a{
-    display: inline-block;
+    display: block;
     font-size: 1rem;
+    white-space: nowrap;
     color: #c68d00;
 }
 li:nth-child(1){
@@ -461,6 +462,7 @@ li:nth-child(1)>a{
 /* sarch bar */
 form.search{
     width: 30%;
+    margin-right: -6%;
 }
 .search{
     display: flex;
@@ -539,7 +541,7 @@ button>i{
 /* main section */
 main{
     width: 100%;
-    margin-top: -5%;
+    margin-top: 0;
 }
 /* about us */
 .about{
@@ -628,6 +630,7 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: baseline;
     gap: 10px;
 }
 
@@ -664,13 +667,13 @@ main{
 }
 input{
     width: 95%;
-    height: 20px;
+    height: 40px;
 }
 input#message{
-    height: 80px;
+    height: 150px;
 }
 .sub{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     display: inline-block;
     width: fit-content;
     margin: 2% 0%;
@@ -693,7 +696,8 @@ input#message{
 .send{
     order: 1;
     width: 42%;
-    margin: 2.5%;
+    margin: 1.5%;
+    margin-top: 0%;
 }
 .hours{
     width: 88%;
@@ -715,7 +719,7 @@ th{
 }
 /* Map setting */
 .map{
-    width: 42%;
+    width: 44.5%;
     order: 2;
 }
 map{
