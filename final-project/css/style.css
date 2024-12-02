@@ -428,12 +428,13 @@ nav{
 }
 /* logo */
 div.logo{
+    margin: 0%;
+    height: auto;
     background-color: transparent;
     margin-right: -30%;
 }
 img.logo{
-    width: 15%;
-    padding: 8% 2%;
+    width: 100px;
 }
 
 ul{
@@ -490,11 +491,12 @@ button>i{
 /* welcome section */
 .header{
     color: white;
-    width: 95%;
-    height: 700px;
+    width: 100%;
+    height: 890px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    background-color:rgb(240, 224, 184);
 }
 .header>img{
     width: 150%;
@@ -531,7 +533,7 @@ button>i{
     font-size: 2.25rem;
     display: inline-block;
     padding: 2.5%;
-    margin: -3.5% 2.5%;
+    margin: 0% 2.5%;
     color: rgb(0, 0, 0);
     background-color: #c68d00;
 }
@@ -588,7 +590,8 @@ main{
     background-color: #c5b07c;
 }
 .service .video, .service .web, .service .print{
-    width: 29%
+    margin: 0%;
+    width: 31% 
 }
 
 
